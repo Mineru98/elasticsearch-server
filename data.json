@@ -1,0 +1,13 @@
+{
+	"from":2,
+	"size":2,
+	"_source":["ShopName", "address"],
+	"sort":[
+		{"lat":"desc"}
+	],
+	"query": {
+		"regexp": {
+			"address":".*강남."
+		}
+	}
+}
